@@ -1,0 +1,14 @@
+name: Primer uso de GitActions
+
+on: 
+  push:
+    branches:
+      - main 
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest 
+
+    steps:
+      - name: "MensajeNuevo"
+        run: echo "Hola mundo"
